@@ -5,20 +5,38 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-include_once '../utils/version.php';
+//use App\Utils\Utils;
 
 class MainController extends AbstractController {
+
+    private $ver;
+
+    /**
+     * IdeaController constructor.
+     */
+    public function __construct() {
+//        $this->ver = Utils::getVer();
+        $module = 4;
+        $tp     = 1;
+        $branch = "mod4-tp1-route-controleur";
+        $descr  = "Route & Contrôleur";
+
+        $this->ver = [
+            "version"     => $module . '.' . $tp,
+            "branch"      => $branch,
+            "description" => "Module " . $module . " TP " . $tp . " - " . $descr
+        ];
+    }
 
     /**
      * @Route("/", name="home")
      */
     public function home() {
-        $ver = getVer();
 
         return $this->render('main/home.html.twig', [
-            "version"     => $ver['version'],
-            "branch"      => $ver['branch'],
-            "description" => $ver['description'],
+            "version"     => $this->ver['version'],
+            "branch"      => $this->ver['branch'],
+            "description" => $this->ver['description'],
         ]);
     }
 
@@ -26,12 +44,11 @@ class MainController extends AbstractController {
      * @Route("/contact", name="contact")
      */
     public function contact() {
-        $ver = getVer();
 
         return $this->render('main/contact.html.twig', [
-            "version"     => $ver['version'],
-            "branch"      => $ver['branch'],
-            "description" => $ver['description'],
+            "version"     => $this->ver['version'],
+            "branch"      => $this->ver['branch'],
+            "description" => $this->ver['description'],
         ]);
     }
 }

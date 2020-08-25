@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deb656e2-78b9-41f7-8552-6c924daf1b1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/IdeaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/version.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/idea/detail.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/idea/list.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/contact.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/Utils.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IdeaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IdeaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inc/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/footer.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inc/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/nav.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/version.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598262076662</updated>
       <workItem from="1598262078661" duration="8481000" />
-      <workItem from="1598356643255" duration="4173000" />
+      <workItem from="1598356643255" duration="6195000" />
     </task>
     <servers />
   </component>
@@ -125,10 +119,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="764" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1598357487510">
+    <state x="764" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1598394644186">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="764" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598357487510" />
+    <state x="764" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598394644186" />
     <state x="748" y="241" key="NewPhpClassDialog" timestamp="1598360304000">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>

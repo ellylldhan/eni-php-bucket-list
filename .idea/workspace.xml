@@ -2,15 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deb656e2-78b9-41f7-8552-6c924daf1b1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/IdeaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/version.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/idea/detail.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/idea/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main/contact.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/inc/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/inc/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/nav.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/home.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -89,6 +98,13 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/Controller" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -97,7 +113,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598262076662</updated>
-      <workItem from="1598262078661" duration="8052000" />
+      <workItem from="1598262078661" duration="8481000" />
+      <workItem from="1598356643255" duration="4173000" />
     </task>
     <servers />
   </component>
@@ -108,13 +125,25 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="748" y="241" key="NewPhpClassDialog" timestamp="1598307390459">
+    <state x="764" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1598357487510">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="748" y="241" key="NewPhpClassDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598307390459" />
+    <state x="764" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598357487510" />
+    <state x="748" y="241" key="NewPhpClassDialog" timestamp="1598360304000">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="748" y="241" key="NewPhpClassDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598360304000" />
+    <state x="778" y="446" key="NewPhpFileDialog" timestamp="1598359695137">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="778" y="446" key="NewPhpFileDialog/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598359695137" />
     <state x="457" y="155" key="SettingsEditor" timestamp="1598262114861">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="457" y="155" key="SettingsEditor/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598262114861" />
+    <state x="808" y="435" key="VCS.ChangelistChooser" timestamp="1598357748703">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="808" y="435" key="VCS.ChangelistChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598357748703" />
   </component>
 </project>

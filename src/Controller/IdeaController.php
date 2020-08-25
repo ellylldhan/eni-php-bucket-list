@@ -7,15 +7,15 @@ use Symfony\Component\Routing\Annotation\Route;
 
 include_once '../utils/version.php';
 
-class MainController extends AbstractController {
-
+class IdeaController extends AbstractController {
     /**
-     * @Route("/", name="home")
+     * @Route("/list", name="idea_list")
      */
-    public function home() {
+    public function list() {
+        //@todo: affiche les choses à faire (SELECT_ALL)
         $ver = getVer();
 
-        return $this->render('main/home.html.twig', [
+        return $this->render('idea/list.html.twig', [
             "version"     => $ver['version'],
             "branch"      => $ver['branch'],
             "description" => $ver['description'],
@@ -23,15 +23,17 @@ class MainController extends AbstractController {
     }
 
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/idea/{id}", name="idea_detail", requirements={"id": "\d+"})
      */
-    public function contact() {
+    public function detail($id) {
+        //@todo: affiche les détails d'une chose à faire (SELECT_BY_ID)
         $ver = getVer();
 
-        return $this->render('main/contact.html.twig', [
+        return $this->render('idea/detail.html.twig', [
             "version"     => $ver['version'],
             "branch"      => $ver['branch'],
             "description" => $ver['description'],
         ]);
     }
+
 }

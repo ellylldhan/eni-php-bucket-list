@@ -2,11 +2,18 @@
 
 {% block title %}B-List | List{% endblock %}
 
-{% block body %}
+{% block main %}
     <h1>La Liste des Choses à Faire du Seau !</h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis delectus dolorem fuga hic itaque maxime odit
-        pariatur quam, quibusdam quisquam rerum soluta vel voluptates. Dolore dolores enim qui ullam voluptate?
-    </p>
+    <div class="idea">
+        <h3>Liste des choses à faire (publiées)</h3>
+        <ol>
+            {% for idea in ideas %}
+                {% if idea.isPublished %}
+                    <li><a href="{{ path("idea_detail", {"id": idea.id}) }}">{{ idea.title }}</a>
+                        <i>({{ idea.dateCreated | date("Y-m-d") }})</i></li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
 {% endblock %}
 

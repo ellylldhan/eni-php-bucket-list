@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="deb656e2-78b9-41f7-8552-6c924daf1b1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/debug.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/deprecations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Idea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/IdeaRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IdeaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IdeaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Utils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/idea/detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/idea/detail.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/idea/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/idea/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inc/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/footer.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inc/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/nav.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="deb656e2-78b9-41f7-8552-6c924daf1b1b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +127,7 @@
       <updated>1598262076662</updated>
       <workItem from="1598262078661" duration="8481000" />
       <workItem from="1598356643255" duration="6434000" />
-      <workItem from="1598515343433" duration="10064000" />
+      <workItem from="1598515343433" duration="10910000" />
     </task>
     <servers />
   </component>

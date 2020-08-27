@@ -5,9 +5,13 @@
 {% block main %}
     <h1>La Liste des Choses à Faire du Seau !</h1>
     <div class="idea">
+        <h3>Liste des choses à faire (publiées)</h3>
         <ol>
             {% for idea in ideas %}
-                <li><a href="{{ path("idea_detail", {"id": idea.id}) }}">{{ idea.title }}</a> <i>({{ idea.dateCreated | date("Y-m-d") }})</i></li>
+                {% if idea.isPublished %}
+                    <li><a href="{{ path("idea_detail", {"id": idea.id}) }}">{{ idea.title }}</a>
+                        <i>({{ idea.dateCreated | date("Y-m-d") }})</i></li>
+                {% endif %}
             {% endfor %}
         </ol>
     </div>

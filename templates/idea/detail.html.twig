@@ -2,12 +2,12 @@
 
 {% block title %}B-List | Details{% endblock %}
 
-{% block body %}
+{% block main %}
     <h1>Le Détail d'une Chose de la Liste du Seau !</h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet assumenda, expedita odit officia omnis
-        qui voluptas? Assumenda cupiditate doloremque, facere in ipsum labore nulla quasi tempore? Debitis nihil,
-        voluptatum!
-    </p>
+    <div>
+        <h3>{{ idea.title }}</h3>
+        <p>{{ idea.description }}</p>
+        <p><i>{{ idea.author }} - {{ idea.dateCreated | date("d/m/Y @ H:i") }}</i></p>
+    </div>
 {% endblock %}
 

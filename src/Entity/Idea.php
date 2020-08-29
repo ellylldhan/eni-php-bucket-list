@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\IdeaRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=IdeaRepository::class)
@@ -17,16 +18,26 @@ class Idea {
     private $id;
 
     /**
+     * @Assert\NotBlank(message="Donnez un titre")
+     * @Assert\Length(
+     *     max=255, maxMessage="Trop de caractères ! Max. 255",
+     *     min=3, minMessage="Donnez un titre plus long ! Min. {{ limit }} lettres")
      * @ORM\Column(type="string", length=255)
      */
     private $title;
 
     /**
+     * @Assert\NotBlank(message="Donnez une description")
+     * @Assert\Length(
+     *     max=1000, maxMessage="T'en dis trop ! Max. {{ limit }} signes",
+     *     min=3, minMessage="Allez, raconte ! Min. {{ limit }} signes")
      * @ORM\Column(type="text")
      */
     private $description;
 
     /**
+     * @Assert\NotBlank(message="C'est à quel nom ?")
+     * @Assert\Length(max=25, maxMessage="Trop de caractères ! Max. 25")
      * @ORM\Column(type="string", length=25)
      */
     private $author;

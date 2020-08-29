@@ -8,10 +8,8 @@
         <h3>Liste des choses à faire (publiées)</h3>
         <ol>
             {% for idea in ideas %}
-                {% if idea.isPublished %}
-                    <li><a href="{{ path("idea_detail", {"id": idea.id}) }}">{{ idea.title }}</a>
-                        <i>({{ idea.dateCreated | date("Y-m-d") }})</i></li>
-                {% endif %}
+                <li><a href="{{ path("idea_detail", {"id": idea.id}) }}">{{ idea.title }}</a>
+                    <i>({{ idea.dateCreated | date("Y-m-d") }})</i></li>
             {% endfor %}
         </ol>
     </div>

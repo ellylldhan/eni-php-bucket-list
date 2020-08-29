@@ -7,6 +7,7 @@
     <title>{% block title %}Bucket-List{% endblock %}</title>
 
     <link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="icon" href="{{ asset('img/favicon.png') }}">
 
@@ -17,12 +18,42 @@
         {% include('inc/header.html.twig') %}
         {% include('inc/nav.html.twig') %}
     </header>
-    <main>
-        {% block main %}{% endblock %}
-    </main>
-    <footer>
-        {% include('inc/footer.html.twig') %}
-    </footer>
-</div>
+
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+            {% if label == 'error' %}
+                <div class="alert alert-danger">
+            {% else %}
+                <div class="alert alert-{{ label }}">
+            {% endif %}
+            {{ message }}
+        </div>
+                    {% endfor %}
+   {% endfor %}
+
+        {# {% for messages in app.flashes('error') %} #}
+        {# {% for message in messages %} #}
+        {# <div class="alert alert-danger"> #}
+        {# {{ message }} #}
+        {# </div> #}
+        {# {% endfor %} #}
+        {# {% endfor %} #}
+
+{# {% for messages in app.flashes('success') %} #}
+                    {# {% for message in messages %} #}
+                    {# <div class="alert alert-success"> #}
+                    {# {{ message }} #}
+                    {# </div> #}
+                    {# {% endfor %} #}
+                    {# {% endfor %}#}
+
+
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+        <footer>
+            {% include('inc/footer.html.twig') %}
+        </footer>
+    </div>
 </body>
 </html>

@@ -3,13 +3,14 @@
 {% block title %}B-List | List{% endblock %}
 
 {% block main %}
-    <h1>La Liste des Choses à Faire du Seau !</h1>
+    <h2>Latest ideas</h2>
     <div class="idea">
         <h3>Liste des choses à faire (publiées)</h3>
         <ol>
             {% for idea in ideas %}
                 <li><a href="{{ path("idea_detail", {"id": idea.id}) }}">{{ idea.title }}</a>
                     <i>({{ idea.dateCreated | date("Y-m-d") }})</i></li>
+                <h5>{{ idea.category.name }}</h5>{{ idea.title }}
             {% endfor %}
         </ol>
     </div>

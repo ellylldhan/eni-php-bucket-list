@@ -6,8 +6,9 @@
     <h1>Le Détail d'une Chose de la Liste du Seau !</h1>
     <div>
         <h3>{{ idea.title }}</h3>
-        <p>{{ idea.description }}</p>
+        <p>{{ idea.description | nl2br }}</p>
         <p><i>{{ idea.author }} - {{ idea.dateCreated | date("d/m/Y @ H:i") }}</i></p>
+        <div class="idea-category">Classified in: {{ idea.category.name }}</div>
     </div>
 {% endblock %}
 

@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cfe4ed7-3532-455c-826c-2f67704d8325" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/test/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/IdeaType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/idea/add.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/IdeaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IdeaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Idea.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Idea.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/IdeaType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/IdeaType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/IdeaRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/IdeaRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/idea/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/idea/add.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/idea/detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/idea/detail.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/idea/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/idea/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inc/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/nav.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +152,8 @@
       <workItem from="1598515343433" duration="10064000" />
       <workItem from="1598605007495" duration="32000" />
       <workItem from="1598605086346" duration="1210000" />
-      <workItem from="1598647352091" duration="9806000" />
+      <workItem from="1598647352091" duration="10427000" />
+      <workItem from="1598967459127" duration="11912000" />
     </task>
     <servers />
   </component>
@@ -166,10 +164,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="764" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1598394644186">
+    <state x="764" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1598977746220">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="764" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598394644186" />
+    <state x="764" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044/1920.0.1920.1080@0.0.1920.1044" timestamp="1598977746220" />
     <state x="748" y="241" key="NewPhpClassDialog" timestamp="1598360304000">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>

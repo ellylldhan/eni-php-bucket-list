@@ -47,4 +47,16 @@ class IdeaRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function findListIdeasWithCategories()
+    {
+        return $this->createQueryBuilder('i')
+                    ->addSelect('c')
+                    ->where('i.isPublished = true')
+                    ->join('i.category', 'c')
+                    ->orderBy('i.dateCreated', 'DESC')
+                    ->setMaxResults(50)
+                    ->getQuery()
+                    ->getResult()
+            ;
+    }
 }

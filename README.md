@@ -3,6 +3,8 @@ TP du cours PHP Symfony @ ENI (08/2020)
 
 http://localhost/bucket-list/public
 
+[mod7-tp-relations-entites](mod7-tp-relations-entites)
+
 Corrections :
 - TP 1 : http://localhost/bucket-1/public
 - TP 2 : http://localhost/bucket-2/public

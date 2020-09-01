@@ -2,9 +2,13 @@
 
 namespace App\Form;
 
+use App\Entity\Category;
 use App\Entity\Idea;
+use App\Repository\CategoryRepository;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\DataTransformer\BooleanToStringTransformer;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -13,7 +17,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class IdeaType extends AbstractType {
     public function buildForm(FormBuilderInterface $builder, array $options) {
-        $builder
+           $builder
             ->add('title', TextType::class, [
                 "label" => "Titre",
                 "attr"  => [
@@ -24,12 +28,19 @@ class IdeaType extends AbstractType {
             ->add('description', TextareaType::class, [
                 "label" => "Description",
                 "attr"  => [
-                    "class"       => "form-control",
+                    "class" => "form-control",
                 ]
             ])
             ->add('author', TextType::class, [
                 "label" => "Auteur",
                 "attr"  => [
+                    "class" => "form-control",
+                ]
+            ])
+            ->add('category', ChoiceType::class, [
+                "label"        => "Category",
+                "choice_label" => "categories",
+                "attr"         => [
                     "class" => "form-control",
                 ]
             ]);

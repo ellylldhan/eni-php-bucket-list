@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\IdeaRepository;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -51,6 +52,16 @@ class Idea {
      * @ORM\Column(type="datetime")
      */
     private $dateCreated;
+
+    /**
+     * @var \App\Entity\Category
+     *
+     * @ORM\ManyToOne(targetEntity="\App\Entity\Category", inversedBy="ideas", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $category;
+
+
 
     public function getId(): ?int {
         return $this->id;
@@ -105,4 +116,25 @@ class Idea {
 
         return $this;
     }
+
+    /**
+     * @return Category
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param Category $category
+     */
+    public function setCategory(Category $category)
+    {
+        $this->category = $category;
+    }
+
+
+
+
+
 }

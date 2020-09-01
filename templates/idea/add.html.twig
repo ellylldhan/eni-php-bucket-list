@@ -8,24 +8,48 @@
 
     {{ form_start(ideaForm) }}
     <div class="form-group">
+{{ form_widget(ideaForm) }}
 
-        {{ form_label(ideaForm.author) }}
-        <div class="input-group mb-3">
-            {{ form_widget(ideaForm.author) }}
-            {{ form_errors(ideaForm.author) }}
-        </div>
+{#        {{ form_label(ideaForm.author) }}#}
+{#        <div class="input-group mb-3">#}
+{#            {{ form_widget(ideaForm.author) }}#}
+{#            {{ form_errors(ideaForm.author) }}#}
+{#        </div>#}
 
-        {{ form_label(ideaForm.title) }}
-        <div class="input-group mb-3">
-            {{ form_widget(ideaForm.title) }}
-            {{ form_errors(ideaForm.title) }}
-        </div>
+{#        {{ form_label(ideaForm.title) }}#}
+{#        <div class="input-group mb-3">#}
+{#            {{ form_widget(ideaForm.title) }}#}
+{#            {{ form_errors(ideaForm.title) }}#}
+{#        </div>#}
 
-        {{ form_label(ideaForm.description) }}
-        <div class="input-group mb-3">
-            {{ form_widget(ideaForm.description) }}
-            {{ form_errors(ideaForm.description) }}
-        </div>
+{#        <div class="input-group mb-3">#}
+{#            {{ form_label(ideaForm.category) }}#}
+{#            <div class="input-group mb-3">#}
+{#                {{ form_widget(ideaForm.category) }}#}
+{#                {{ form_errors(ideaForm.category) }}#}
+{#                <ul>#}
+{#                    {% for cat in ideaForm.category %}#}
+{#                        <li>#}
+{#                            {{ form_errors(cat) }}#}
+{#                            {{ form_widget(cat) }}#}
+{#                        </li>#}
+{#                    {% endfor %}#}
+{#                </ul>#}
+{#            </div>#}
+
+{#            <select class="input-group mb-3">#}
+{#                {% for cat in categories %}#}
+{#                    <option value="{{ cat.name }}">{{ cat.name }}</option>#}
+{#                {% endfor %}#}
+{#            </select>#}
+
+{#        </div>#}
+
+{#        {{ form_label(ideaForm.description) }}#}
+{#        <div class="input-group mb-3">#}
+{#            {{ form_widget(ideaForm.description) }}#}
+{#            {{ form_errors(ideaForm.description) }}#}
+{#        </div>#}
         <button type="submit" class="btn btn-primary">Envoyer</button>
     </div>
     {{ form_end(ideaForm) }}

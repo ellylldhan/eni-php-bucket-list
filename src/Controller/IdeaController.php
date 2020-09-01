@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Category;
 use App\Entity\Idea;
 use App\Form\IdeaType;
 use Doctrine\ORM\EntityManagerInterface;
@@ -15,10 +16,10 @@ class IdeaController extends AbstractController {
     private $ver;
 
     public function __construct() {
-        $module = 6;
+        $module = 7;
         $tp     = 1;
-        $branch = "mod6-tp-formulaire";
-        $descr  = "Formulaire";
+        $branch = "mod7-tp-relations-entites";
+        $descr  = "Relations entre entités";
 
         $this->ver = [
             "version"     => $module . '.' . $tp,
@@ -70,7 +71,11 @@ class IdeaController extends AbstractController {
      */
     public function add(EntityManagerInterface $em, Request $request) {
         $idea = new Idea();
-        $idea->setDateCreated(new \DateTime());
+        $category = new Category();
+
+        $catRepo    = $this->getDoctrine()->getRepository(Category::class);
+        $categories = $catRepo->findAll();
+
         $idea->setIsPublished(false);
 
         // Instanciation du formulaire lié à l'entité
@@ -78,17 +83,20 @@ class IdeaController extends AbstractController {
 
         // Récupérer la request entiere
         $ideaForm->handleRequest($request);
+        dump($ideaForm);
         if ($ideaForm->isSubmitted() && $ideaForm->isValid()) {
             // Passer isPublished à true
             $idea->setIsPublished(true);
+            $idea->setDateCreated(new \DateTime());
+            $idea->setCategory($category);
 
             // Ajout de l'entité dans la bdd via EntityManager
             $em->persist($idea);
+            $em->persist($category);
             $em->flush();
 
             // Affichage Message Flash pour confirmer succès
             $this->addFlash("success", "Idée enregistrée.");
-//            dump($idea->getId());
 
             // Redirige vers page détail
             return $this->redirectToRoute("idea_detail", [
@@ -101,6 +109,7 @@ class IdeaController extends AbstractController {
             "branch"      => $this->ver['branch'],
             "description" => $this->ver['description'],
             "ideaForm"    => $ideaForm->createView(),
+            "categories"  => $categories,
         ]);
     }
 

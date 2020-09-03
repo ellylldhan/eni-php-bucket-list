@@ -16,10 +16,10 @@ class IdeaController extends AbstractController {
     private $ver;
 
     public function __construct() {
-        $module = 7;
+        $module = 8;
         $tp     = 1;
-        $branch = "mod7-tp-relations-entites";
-        $descr  = "Relations entre entités";
+        $branch = "mod8-tp-utilisateur";
+        $descr  = "Gestion utilisateur";
 
         $this->ver = [
             "version"     => $module . '.' . $tp,
@@ -70,6 +70,7 @@ class IdeaController extends AbstractController {
      * @return Response
      */
     public function add(EntityManagerInterface $em, Request $request) {
+
         $idea = new Idea();
         $category = new Category();
 

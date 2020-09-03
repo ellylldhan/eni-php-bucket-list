@@ -3,6 +3,15 @@
         <li><a href="{{ path('home') }}">Accueil</a></li>
         <li><a href="{{ path('idea_list') }}">Liste</a></li>
         <li><a href="{{ path('idea_add') }}">Ajouter</a></li>
+        {# Check si user est connecté : #}
+        {%  if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+            <li><a href="{{ path('logout') }}"><span style="color:mediumvioletred">Logout</span></a></li>
+        {% else %}
+            <li><a href="{{ path('register') }}">User/Register</a></li>
+            <li><a href="{{ path('login') }}">User/Login</a></li>
+        {%  endif %}
+        <li><a href="{{ path('user_list') }}">User/List</a></li>
         <li><a href="{{ path('contact') }}">Contact</a></li>
+
     </ul>
 </nav>

@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Category;
 use App\Entity\Idea;
+use App\Entity\User;
 use App\Form\IdeaType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -73,6 +74,7 @@ class IdeaController extends AbstractController {
 
         $idea = new Idea();
         $category = new Category();
+//        $user = new User();
 
         $catRepo    = $this->getDoctrine()->getRepository(Category::class);
         $categories = $catRepo->findAll();
@@ -90,6 +92,8 @@ class IdeaController extends AbstractController {
             $idea->setIsPublished(true);
             $idea->setDateCreated(new \DateTime());
             $idea->setCategory($category);
+            dump($idea);
+            dump($category);
 
             // Ajout de l'entité dans la bdd via EntityManager
             $em->persist($idea);

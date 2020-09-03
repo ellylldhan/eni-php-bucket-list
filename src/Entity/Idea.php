@@ -54,7 +54,7 @@ class Idea {
     private $dateCreated;
 
     /**
-     * @var \App\Entity\Category
+     * @var Category
      *
      * @ORM\ManyToOne(targetEntity="\App\Entity\Category", inversedBy="ideas", cascade={"persist"})
      * @ORM\JoinColumn(nullable=false)

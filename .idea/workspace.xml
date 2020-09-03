@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cfe4ed7-3532-455c-826c-2f67704d8325" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bkup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IdeaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IdeaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Idea.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Idea.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/IdeaType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/IdeaType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/IdeaRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/IdeaRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/idea/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/idea/add.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/idea/detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/idea/detail.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/idea/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/idea/list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +146,9 @@
       <workItem from="1598605007495" duration="32000" />
       <workItem from="1598605086346" duration="1210000" />
       <workItem from="1598647352091" duration="10427000" />
-      <workItem from="1598967459127" duration="11912000" />
+      <workItem from="1598967459127" duration="13882000" />
+      <workItem from="1599046652804" duration="1946000" />
+      <workItem from="1599116729184" duration="993000" />
     </task>
     <servers />
   </component>

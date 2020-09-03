@@ -39,7 +39,7 @@ class IdeaType extends AbstractType {
             ])
             ->add('category', ChoiceType::class, [
                 "label"        => "Category",
-                "choice_label" => "categories",
+                "choice_label" => "name",
                 "attr"         => [
                     "class" => "form-control",
                 ]
